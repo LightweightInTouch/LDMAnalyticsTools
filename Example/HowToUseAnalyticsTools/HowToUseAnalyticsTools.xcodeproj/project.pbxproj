@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041BECAF19B7557E00E57AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BECAE19B7557E00E57AA7 /* Foundation.framework */; };
+		041BECB119B7557E00E57AA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BECB019B7557E00E57AA7 /* CoreGraphics.framework */; };
+		041BECB319B7557E00E57AA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BECB219B7557E00E57AA7 /* UIKit.framework */; };
+		041BECB919B7557E00E57AA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041BECB719B7557E00E57AA7 /* InfoPlist.strings */; };
+		041BECBB19B7557E00E57AA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BECBA19B7557E00E57AA7 /* main.m */; };
+		041BECBF19B7557E00E57AA7 /* EXAMPLEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BECBE19B7557E00E57AA7 /* EXAMPLEAppDelegate.m */; };
+		041BECC219B7557E00E57AA7 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041BECC019B7557E00E57AA7 /* Main_iPhone.storyboard */; };
+		041BECC519B7557E00E57AA7 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041BECC319B7557E00E57AA7 /* Main_iPad.storyboard */; };
+		041BECC819B7557E00E57AA7 /* EXAMPLEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BECC719B7557E00E57AA7 /* EXAMPLEViewController.m */; };
+		041BECCA19B7557E00E57AA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041BECC919B7557E00E57AA7 /* Images.xcassets */; };
+		041BECD119B7557E00E57AA7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BECD019B7557E00E57AA7 /* XCTest.framework */; };
+		041BECD219B7557E00E57AA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BECAE19B7557E00E57AA7 /* Foundation.framework */; };
+		041BECD319B7557E00E57AA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BECB219B7557E00E57AA7 /* UIKit.framework */; };
+		041BECDB19B7557E00E57AA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 041BECD919B7557E00E57AA7 /* InfoPlist.strings */; };
+		041BECDD19B7557E00E57AA7 /* HowToUseAnalyticsToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BECDC19B7557E00E57AA7 /* HowToUseAnalyticsToolsTests.m */; };
+		041BED1119B75DDF00E57AA7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BED1019B75DDF00E57AA7 /* SystemConfiguration.framework */; };
+		041BED1319B75DE500E57AA7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BED1219B75DE500E57AA7 /* libz.dylib */; };
+		041BED1519B75DF700E57AA7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BED1419B75DF700E57AA7 /* CoreData.framework */; };
+		041BED6019B7608500E57AA7 /* libFlurry_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BED4319B7608500E57AA7 /* libFlurry_4.4.0.a */; };
+		041BED6119B7608500E57AA7 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BED4B19B7608500E57AA7 /* libGoogleAnalyticsServices.a */; };
+		041BED6219B7608500E57AA7 /* LDMAnalyticsTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED4F19B7608500E57AA7 /* LDMAnalyticsTools.m */; };
+		041BED6319B7608500E57AA7 /* LDMCustomFlurryEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED5219B7608500E57AA7 /* LDMCustomFlurryEvent.m */; };
+		041BED6419B7608500E57AA7 /* LDMFlurryAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED5419B7608500E57AA7 /* LDMFlurryAnalyticsTracker.m */; };
+		041BED6519B7608500E57AA7 /* LDMFlurryEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED5619B7608500E57AA7 /* LDMFlurryEventFactory.m */; };
+		041BED6619B7608500E57AA7 /* LDMCustomGAIEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED5919B7608500E57AA7 /* LDMCustomGAIEvent.m */; };
+		041BED6719B7608500E57AA7 /* LDMCustomGAIEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED5B19B7608500E57AA7 /* LDMCustomGAIEventFactory.m */; };
+		041BED6819B7608500E57AA7 /* LDMCustomGAITiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED5D19B7608500E57AA7 /* LDMCustomGAITiming.m */; };
+		041BED6919B7608500E57AA7 /* LDMGAITracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED5F19B7608500E57AA7 /* LDMGAITracker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		041BECD419B7557E00E57AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041BECA319B7557E00E57AA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041BECAA19B7557E00E57AA7;
+			remoteInfo = HowToUseAnalyticsTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041BECAB19B7557E00E57AA7 /* HowToUseAnalyticsTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowToUseAnalyticsTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041BECAE19B7557E00E57AA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		041BECB019B7557E00E57AA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		041BECB219B7557E00E57AA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		041BECB619B7557E00E57AA7 /* HowToUseAnalyticsTools-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HowToUseAnalyticsTools-Info.plist"; sourceTree = "<group>"; };
+		041BECB819B7557E00E57AA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		041BECBA19B7557E00E57AA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		041BECBC19B7557E00E57AA7 /* HowToUseAnalyticsTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HowToUseAnalyticsTools-Prefix.pch"; sourceTree = "<group>"; };
+		041BECBD19B7557E00E57AA7 /* EXAMPLEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXAMPLEAppDelegate.h; sourceTree = "<group>"; };
+		041BECBE19B7557E00E57AA7 /* EXAMPLEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXAMPLEAppDelegate.m; sourceTree = "<group>"; };
+		041BECC119B7557E00E57AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		041BECC419B7557E00E57AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		041BECC619B7557E00E57AA7 /* EXAMPLEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXAMPLEViewController.h; sourceTree = "<group>"; };
+		041BECC719B7557E00E57AA7 /* EXAMPLEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXAMPLEViewController.m; sourceTree = "<group>"; };
+		041BECC919B7557E00E57AA7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		041BECCF19B7557E00E57AA7 /* HowToUseAnalyticsToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowToUseAnalyticsToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		041BECD019B7557E00E57AA7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		041BECD819B7557E00E57AA7 /* HowToUseAnalyticsToolsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HowToUseAnalyticsToolsTests-Info.plist"; sourceTree = "<group>"; };
+		041BECDA19B7557E00E57AA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		041BECDC19B7557E00E57AA7 /* HowToUseAnalyticsToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HowToUseAnalyticsToolsTests.m; sourceTree = "<group>"; };
+		041BED1019B75DDF00E57AA7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		041BED1219B75DE500E57AA7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		041BED1419B75DF700E57AA7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		041BED4219B7608500E57AA7 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		041BED4319B7608500E57AA7 /* libFlurry_4.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.4.0.a; sourceTree = "<group>"; };
+		041BED4519B7608500E57AA7 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		041BED4619B7608500E57AA7 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		041BED4719B7608500E57AA7 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		041BED4819B7608500E57AA7 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		041BED4919B7608500E57AA7 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		041BED4A19B7608500E57AA7 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		041BED4B19B7608500E57AA7 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		041BED4E19B7608500E57AA7 /* LDMAnalyticsTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMAnalyticsTools.h; sourceTree = "<group>"; };
+		041BED4F19B7608500E57AA7 /* LDMAnalyticsTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMAnalyticsTools.m; sourceTree = "<group>"; };
+		041BED5119B7608500E57AA7 /* LDMCustomFlurryEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMCustomFlurryEvent.h; sourceTree = "<group>"; };
+		041BED5219B7608500E57AA7 /* LDMCustomFlurryEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMCustomFlurryEvent.m; sourceTree = "<group>"; };
+		041BED5319B7608500E57AA7 /* LDMFlurryAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMFlurryAnalyticsTracker.h; sourceTree = "<group>"; };
+		041BED5419B7608500E57AA7 /* LDMFlurryAnalyticsTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMFlurryAnalyticsTracker.m; sourceTree = "<group>"; };
+		041BED5519B7608500E57AA7 /* LDMFlurryEventFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMFlurryEventFactory.h; sourceTree = "<group>"; };
+		041BED5619B7608500E57AA7 /* LDMFlurryEventFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMFlurryEventFactory.m; sourceTree = "<group>"; };
+		041BED5819B7608500E57AA7 /* LDMCustomGAIEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMCustomGAIEvent.h; sourceTree = "<group>"; };
+		041BED5919B7608500E57AA7 /* LDMCustomGAIEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMCustomGAIEvent.m; sourceTree = "<group>"; };
+		041BED5A19B7608500E57AA7 /* LDMCustomGAIEventFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMCustomGAIEventFactory.h; sourceTree = "<group>"; };
+		041BED5B19B7608500E57AA7 /* LDMCustomGAIEventFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMCustomGAIEventFactory.m; sourceTree = "<group>"; };
+		041BED5C19B7608500E57AA7 /* LDMCustomGAITiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMCustomGAITiming.h; sourceTree = "<group>"; };
+		041BED5D19B7608500E57AA7 /* LDMCustomGAITiming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMCustomGAITiming.m; sourceTree = "<group>"; };
+		041BED5E19B7608500E57AA7 /* LDMGAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMGAITracker.h; sourceTree = "<group>"; };
+		041BED5F19B7608500E57AA7 /* LDMGAITracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMGAITracker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041BECA819B7557E00E57AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041BED1519B75DF700E57AA7 /* CoreData.framework in Frameworks */,
+				041BED1319B75DE500E57AA7 /* libz.dylib in Frameworks */,
+				041BED1119B75DDF00E57AA7 /* SystemConfiguration.framework in Frameworks */,
+				041BED6119B7608500E57AA7 /* libGoogleAnalyticsServices.a in Frameworks */,
+				041BECB119B7557E00E57AA7 /* CoreGraphics.framework in Frameworks */,
+				041BED6019B7608500E57AA7 /* libFlurry_4.4.0.a in Frameworks */,
+				041BECB319B7557E00E57AA7 /* UIKit.framework in Frameworks */,
+				041BECAF19B7557E00E57AA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041BECCC19B7557E00E57AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041BECD119B7557E00E57AA7 /* XCTest.framework in Frameworks */,
+				041BECD319B7557E00E57AA7 /* UIKit.framework in Frameworks */,
+				041BECD219B7557E00E57AA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041BECA219B7557E00E57AA7 = {
+			isa = PBXGroup;
+			children = (
+				041BECB419B7557E00E57AA7 /* HowToUseAnalyticsTools */,
+				041BECD619B7557E00E57AA7 /* HowToUseAnalyticsToolsTests */,
+				041BECAD19B7557E00E57AA7 /* Frameworks */,
+				041BECAC19B7557E00E57AA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		041BECAC19B7557E00E57AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041BECAB19B7557E00E57AA7 /* HowToUseAnalyticsTools.app */,
+				041BECCF19B7557E00E57AA7 /* HowToUseAnalyticsToolsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041BECAD19B7557E00E57AA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				041BED1419B75DF700E57AA7 /* CoreData.framework */,
+				041BED1219B75DE500E57AA7 /* libz.dylib */,
+				041BED1019B75DDF00E57AA7 /* SystemConfiguration.framework */,
+				041BECAE19B7557E00E57AA7 /* Foundation.framework */,
+				041BECB019B7557E00E57AA7 /* CoreGraphics.framework */,
+				041BECB219B7557E00E57AA7 /* UIKit.framework */,
+				041BECD019B7557E00E57AA7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		041BECB419B7557E00E57AA7 /* HowToUseAnalyticsTools */ = {
+			isa = PBXGroup;
+			children = (
+				041BED4019B7608500E57AA7 /* ExternalLibraries */,
+				041BED4C19B7608500E57AA7 /* Tools */,
+				041BECBD19B7557E00E57AA7 /* EXAMPLEAppDelegate.h */,
+				041BECBE19B7557E00E57AA7 /* EXAMPLEAppDelegate.m */,
+				041BECC019B7557E00E57AA7 /* Main_iPhone.storyboard */,
+				041BECC319B7557E00E57AA7 /* Main_iPad.storyboard */,
+				041BECC619B7557E00E57AA7 /* EXAMPLEViewController.h */,
+				041BECC719B7557E00E57AA7 /* EXAMPLEViewController.m */,
+				041BECC919B7557E00E57AA7 /* Images.xcassets */,
+				041BECB519B7557E00E57AA7 /* Supporting Files */,
+			);
+			path = HowToUseAnalyticsTools;
+			sourceTree = "<group>";
+		};
+		041BECB519B7557E00E57AA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				041BECB619B7557E00E57AA7 /* HowToUseAnalyticsTools-Info.plist */,
+				041BECB719B7557E00E57AA7 /* InfoPlist.strings */,
+				041BECBA19B7557E00E57AA7 /* main.m */,
+				041BECBC19B7557E00E57AA7 /* HowToUseAnalyticsTools-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		041BECD619B7557E00E57AA7 /* HowToUseAnalyticsToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				041BECDC19B7557E00E57AA7 /* HowToUseAnalyticsToolsTests.m */,
+				041BECD719B7557E00E57AA7 /* Supporting Files */,
+			);
+			path = HowToUseAnalyticsToolsTests;
+			sourceTree = "<group>";
+		};
+		041BECD719B7557E00E57AA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				041BECD819B7557E00E57AA7 /* HowToUseAnalyticsToolsTests-Info.plist */,
+				041BECD919B7557E00E57AA7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		041BED4019B7608500E57AA7 /* ExternalLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				041BED4119B7608500E57AA7 /* Flurry */,
+				041BED4419B7608500E57AA7 /* GoogleAnalytics */,
+			);
+			name = ExternalLibraries;
+			path = ../../../ExternalLibraries;
+			sourceTree = "<group>";
+		};
+		041BED4119B7608500E57AA7 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				041BED4219B7608500E57AA7 /* Flurry.h */,
+				041BED4319B7608500E57AA7 /* libFlurry_4.4.0.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
+		041BED4419B7608500E57AA7 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				041BED4519B7608500E57AA7 /* GAI.h */,
+				041BED4619B7608500E57AA7 /* GAIDictionaryBuilder.h */,
+				041BED4719B7608500E57AA7 /* GAIFields.h */,
+				041BED4819B7608500E57AA7 /* GAILogger.h */,
+				041BED4919B7608500E57AA7 /* GAITrackedViewController.h */,
+				041BED4A19B7608500E57AA7 /* GAITracker.h */,
+				041BED4B19B7608500E57AA7 /* libGoogleAnalyticsServices.a */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		041BED4C19B7608500E57AA7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				041BED4D19B7608500E57AA7 /* AnalyticsTools */,
+				041BED5019B7608500E57AA7 /* Flurry */,
+				041BED5719B7608500E57AA7 /* GoogleAnalytics */,
+			);
+			name = Tools;
+			path = ../../../Tools;
+			sourceTree = "<group>";
+		};
+		041BED4D19B7608500E57AA7 /* AnalyticsTools */ = {
+			isa = PBXGroup;
+			children = (
+				041BED4E19B7608500E57AA7 /* LDMAnalyticsTools.h */,
+				041BED4F19B7608500E57AA7 /* LDMAnalyticsTools.m */,
+			);
+			path = AnalyticsTools;
+			sourceTree = "<group>";
+		};
+		041BED5019B7608500E57AA7 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				041BED5119B7608500E57AA7 /* LDMCustomFlurryEvent.h */,
+				041BED5219B7608500E57AA7 /* LDMCustomFlurryEvent.m */,
+				041BED5319B7608500E57AA7 /* LDMFlurryAnalyticsTracker.h */,
+				041BED5419B7608500E57AA7 /* LDMFlurryAnalyticsTracker.m */,
+				041BED5519B7608500E57AA7 /* LDMFlurryEventFactory.h */,
+				041BED5619B7608500E57AA7 /* LDMFlurryEventFactory.m */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
+		041BED5719B7608500E57AA7 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				041BED5819B7608500E57AA7 /* LDMCustomGAIEvent.h */,
+				041BED5919B7608500E57AA7 /* LDMCustomGAIEvent.m */,
+				041BED5A19B7608500E57AA7 /* LDMCustomGAIEventFactory.h */,
+				041BED5B19B7608500E57AA7 /* LDMCustomGAIEventFactory.m */,
+				041BED5C19B7608500E57AA7 /* LDMCustomGAITiming.h */,
+				041BED5D19B7608500E57AA7 /* LDMCustomGAITiming.m */,
+				041BED5E19B7608500E57AA7 /* LDMGAITracker.h */,
+				041BED5F19B7608500E57AA7 /* LDMGAITracker.m */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041BECAA19B7557E00E57AA7 /* HowToUseAnalyticsTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041BECE019B7557E00E57AA7 /* Build configuration list for PBXNativeTarget "HowToUseAnalyticsTools" */;
+			buildPhases = (
+				041BECA719B7557E00E57AA7 /* Sources */,
+				041BECA819B7557E00E57AA7 /* Frameworks */,
+				041BECA919B7557E00E57AA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HowToUseAnalyticsTools;
+			productName = HowToUseAnalyticsTools;
+			productReference = 041BECAB19B7557E00E57AA7 /* HowToUseAnalyticsTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		041BECCE19B7557E00E57AA7 /* HowToUseAnalyticsToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041BECE319B7557E00E57AA7 /* Build configuration list for PBXNativeTarget "HowToUseAnalyticsToolsTests" */;
+			buildPhases = (
+				041BECCB19B7557E00E57AA7 /* Sources */,
+				041BECCC19B7557E00E57AA7 /* Frameworks */,
+				041BECCD19B7557E00E57AA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041BECD519B7557E00E57AA7 /* PBXTargetDependency */,
+			);
+			name = HowToUseAnalyticsToolsTests;
+			productName = HowToUseAnalyticsToolsTests;
+			productReference = 041BECCF19B7557E00E57AA7 /* HowToUseAnalyticsToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041BECA319B7557E00E57AA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EXAMPLE;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = example;
+				TargetAttributes = {
+					041BECCE19B7557E00E57AA7 = {
+						TestTargetID = 041BECAA19B7557E00E57AA7;
+					};
+				};
+			};
+			buildConfigurationList = 041BECA619B7557E00E57AA7 /* Build configuration list for PBXProject "HowToUseAnalyticsTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041BECA219B7557E00E57AA7;
+			productRefGroup = 041BECAC19B7557E00E57AA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041BECAA19B7557E00E57AA7 /* HowToUseAnalyticsTools */,
+				041BECCE19B7557E00E57AA7 /* HowToUseAnalyticsToolsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041BECA919B7557E00E57AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041BECC519B7557E00E57AA7 /* Main_iPad.storyboard in Resources */,
+				041BECCA19B7557E00E57AA7 /* Images.xcassets in Resources */,
+				041BECC219B7557E00E57AA7 /* Main_iPhone.storyboard in Resources */,
+				041BECB919B7557E00E57AA7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041BECCD19B7557E00E57AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041BECDB19B7557E00E57AA7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041BECA719B7557E00E57AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041BED6319B7608500E57AA7 /* LDMCustomFlurryEvent.m in Sources */,
+				041BED6919B7608500E57AA7 /* LDMGAITracker.m in Sources */,
+				041BED6619B7608500E57AA7 /* LDMCustomGAIEvent.m in Sources */,
+				041BED6219B7608500E57AA7 /* LDMAnalyticsTools.m in Sources */,
+				041BECBB19B7557E00E57AA7 /* main.m in Sources */,
+				041BED6719B7608500E57AA7 /* LDMCustomGAIEventFactory.m in Sources */,
+				041BED6419B7608500E57AA7 /* LDMFlurryAnalyticsTracker.m in Sources */,
+				041BED6819B7608500E57AA7 /* LDMCustomGAITiming.m in Sources */,
+				041BECC819B7557E00E57AA7 /* EXAMPLEViewController.m in Sources */,
+				041BECBF19B7557E00E57AA7 /* EXAMPLEAppDelegate.m in Sources */,
+				041BED6519B7608500E57AA7 /* LDMFlurryEventFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041BECCB19B7557E00E57AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041BECDD19B7557E00E57AA7 /* HowToUseAnalyticsToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		041BECD519B7557E00E57AA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041BECAA19B7557E00E57AA7 /* HowToUseAnalyticsTools */;
+			targetProxy = 041BECD419B7557E00E57AA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		041BECB719B7557E00E57AA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041BECB819B7557E00E57AA7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		041BECC019B7557E00E57AA7 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041BECC119B7557E00E57AA7 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		041BECC319B7557E00E57AA7 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041BECC419B7557E00E57AA7 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		041BECD919B7557E00E57AA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041BECDA19B7557E00E57AA7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041BECDE19B7557E00E57AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041BECDF19B7557E00E57AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041BECE119B7557E00E57AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HowToUseAnalyticsTools/HowToUseAnalyticsTools-Prefix.pch";
+				INFOPLIST_FILE = "HowToUseAnalyticsTools/HowToUseAnalyticsTools-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HowToUseAnalyticsTools/ExternalLibraries/Flurry",
+					"$(PROJECT_DIR)/HowToUseAnalyticsTools/ExternalLibraries/GoogleAnalytics",
+					/Users/mac/Documents/Projects/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/ExternalLibraries/Flurry,
+					/Users/mac/Documents/Projects/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/ExternalLibraries/GoogleAnalytics,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		041BECE219B7557E00E57AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HowToUseAnalyticsTools/HowToUseAnalyticsTools-Prefix.pch";
+				INFOPLIST_FILE = "HowToUseAnalyticsTools/HowToUseAnalyticsTools-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HowToUseAnalyticsTools/ExternalLibraries/Flurry",
+					"$(PROJECT_DIR)/HowToUseAnalyticsTools/ExternalLibraries/GoogleAnalytics",
+					/Users/mac/Documents/Projects/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/ExternalLibraries/Flurry,
+					/Users/mac/Documents/Projects/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/ExternalLibraries/GoogleAnalytics,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		041BECE419B7557E00E57AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HowToUseAnalyticsTools.app/HowToUseAnalyticsTools";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HowToUseAnalyticsTools/HowToUseAnalyticsTools-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HowToUseAnalyticsToolsTests/HowToUseAnalyticsToolsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		041BECE519B7557E00E57AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HowToUseAnalyticsTools.app/HowToUseAnalyticsTools";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HowToUseAnalyticsTools/HowToUseAnalyticsTools-Prefix.pch";
+				INFOPLIST_FILE = "HowToUseAnalyticsToolsTests/HowToUseAnalyticsToolsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041BECA619B7557E00E57AA7 /* Build configuration list for PBXProject "HowToUseAnalyticsTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041BECDE19B7557E00E57AA7 /* Debug */,
+				041BECDF19B7557E00E57AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041BECE019B7557E00E57AA7 /* Build configuration list for PBXNativeTarget "HowToUseAnalyticsTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041BECE119B7557E00E57AA7 /* Debug */,
+				041BECE219B7557E00E57AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041BECE319B7557E00E57AA7 /* Build configuration list for PBXNativeTarget "HowToUseAnalyticsToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041BECE419B7557E00E57AA7 /* Debug */,
+				041BECE519B7557E00E57AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041BECA319B7557E00E57AA7 /* Project object */;
+}

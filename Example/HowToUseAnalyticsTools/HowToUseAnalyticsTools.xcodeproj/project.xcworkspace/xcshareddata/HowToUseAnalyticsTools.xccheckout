@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E5D6B9B9-1F87-42E3-A9DD-9FAF8CA5E22E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HowToUseAnalyticsTools</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2035AFBC-9A13-4CCE-B94B-20C142E6B2B6</key>
+		<string>https://github.com/lolgear/LDMAnalyticsTools.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example/HowToUseAnalyticsTools/HowToUseAnalyticsTools.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2035AFBC-9A13-4CCE-B94B-20C142E6B2B6</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lolgear/LDMAnalyticsTools.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2035AFBC-9A13-4CCE-B94B-20C142E6B2B6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2035AFBC-9A13-4CCE-B94B-20C142E6B2B6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LDMAnalyticsTools</string>
+		</dict>
+	</array>
+</dict>
+</plist>
