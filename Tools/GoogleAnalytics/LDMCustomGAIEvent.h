@@ -20,11 +20,11 @@
 @property (nonatomic, weak)  LDMGAITracker *tracker;
 
 #pragma mark - Initialization
-+ (CustomGAIEvent *)event;
-+ (CustomGAIEvent *)eventWithCategory:(NSString *)eventCategory
-                               action:(NSString *)eventAction
-                                label:(NSString *)eventLabel
-                                value:(NSNumber *)eventValue;
++ (instancetype)createEvent;
++ (instancetype)createEventWithCategory:(NSString *)eventCategory
+                                 action:(NSString *)eventAction
+                                  label:(NSString *)eventLabel
+                                  value:(NSNumber *)eventValue;
 
 #pragma mark - Subscribe
 - (void)subscribeOnNotificationWithName:(NSString *)notificationName;

@@ -12,15 +12,15 @@
 
 #pragma mark - Initialization
 
-+(instancetype)createInstance{
++(instancetype)createTiming{
     return  [[self alloc] init];
 }
-+(instancetype)createGAITimingWithCategory:(NSString *)category
++(instancetype)createTimingWithCategory:(NSString *)category
                                         withName:(NSString *)name
                                        withLabel:(NSString *)label
                                 withTimeInterval:(NSNumber *)value{
 
-    LDMCustomGAITiming* timing = [self createInstance];
+    LDMCustomGAITiming* timing = [self createTiming];
     timing.timingCategory = category;
     timing.timingName     = name;
     timing.timingLabel    = label;

@@ -61,7 +61,7 @@ static const CGFloat kGoogleAnalyticsDispathInterval = 30.0f; /*it is not optima
                                                                 value:event.eventValueIs64bit] build]];
 }
 #pragma mark - Timing Handling
-- (void)sendTiming:(LDMCustomGAIEvent *)timing{
+- (void)sendTiming:(LDMCustomGAITiming *)timing{
 
     [self.tracker send:[[GAIDictionaryBuilder createTimingWithCategory:timing.timingCategory
                                                               interval:timing.timeInterval
@@ -77,7 +77,7 @@ static const CGFloat kGoogleAnalyticsDispathInterval = 30.0f; /*it is not optima
 #pragma mark - Pool of events
 
 - (void)fillEventPool{
-    self.pullOfEvents = [LDMCustomGAIEventFactory allEvents];
+    self.pullOfEvents = self.pullOfEvents ? self.pullOfEvents : [LDMCustomGAIEventFactory allEvents];
     for (LDMCustomGAIEvent *event in self.pullOfEvents) {
         event.tracker = self;
     }

@@ -37,7 +37,7 @@ typedef enum{
 //-(void)activeLocationOption:(BOOL)locationIsEnabled;
 //-(void)updateLastLocation;
 
-#pragma mark - Pull of events
+#pragma mark - Pool of events
 @property (nonatomic,strong) NSArray *pullOfEvents;
 - (void)fillEventPool;
 

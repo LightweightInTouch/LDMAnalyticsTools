@@ -115,7 +115,7 @@
 }   
 
 - (void)fillEventPool{
-    self.pullOfEvents = [LDMFlurryEventFactory allEvents];
+    self.pullOfEvents = self.pullOfEvents ? [LDMFlurryEventFactory allEvents] : self.pullOfEvents;
 }
 
 @end

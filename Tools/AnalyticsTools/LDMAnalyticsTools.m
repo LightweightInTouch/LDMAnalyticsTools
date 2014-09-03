@@ -18,18 +18,17 @@
     dispatch_once(&onceToken, ^{
         sharedInstance = [[self alloc] init];
     });
-    
     return sharedInstance;
 }
 - (LDMGAITracker *)googleAnalyticsTracker{
     if (!_googleAnalyticsTracker){
-        _googleAnalyticsTracker = [LDMGAITracker createGAITrackerWithTrackerID:LDMGoogleAnalyticsID];
+        _googleAnalyticsTracker = [LDMGAITracker createGAITrackerWithTrackerID:self.keys[@"googleAnalyticsTracker"]];
     }
     return _googleAnalyticsTracker;
 }
 - (LDMFlurryAnalyticsTracker *)flurryAnalyticsTracker{
     if (!_flurryAnalyticsTracker){
-        _flurryAnalyticsTracker = [LDMFlurryAnalyticsTracker createKLFlurryTrackerWithAppID:LDMFlurryAnalyticsID];        
+        _flurryAnalyticsTracker = [LDMFlurryAnalyticsTracker createLDMFlurryTrackerWithAppID:self.keys[@"flurryAnalyticsTracker"]];
     }
     return _flurryAnalyticsTracker;
 }

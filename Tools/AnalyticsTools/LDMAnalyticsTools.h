@@ -13,7 +13,14 @@
 @interface LDMAnalyticsTools : NSObject
 
 + (instancetype)sharedInstance;
-
+// setup this dictionary first
+// [LDMAnalyticsTools sharedInstance].keys =
+// @{ @"googleAnalyticsTracker" : @"LDMGoogleAnalytcsID",
+//    @"flurryAnalyticsTracker" : @"LDMFlurryAnalyticsID"
+// };
+// that's all!
+// [LDMAnalyticsTools fillEventPool];
+@property (nonatomic,strong) NSDictionary* keys;
 @property (nonatomic,strong) LDMGAITracker *googleAnalyticsTracker;
 @property (nonatomic,strong) LDMFlurryAnalyticsTracker *flurryAnalyticsTracker;
 

@@ -17,11 +17,11 @@
 @property (nonatomic,strong) NSString* notificationName;
 
 #pragma mark - Initialization
-+(instancetype)createInstance;
-+(instancetype)createGAITimingWithCategory:(NSString *)category
-                                      withName:(NSString *)name
-                                     withLabel:(NSString *)label
-                              withTimeInterval:(NSNumber *)value;
++(instancetype)createTiming;
++(instancetype)createTimingWithCategory:(NSString *)category
+                               withName:(NSString *)name
+                              withLabel:(NSString *)label
+                       withTimeInterval:(NSNumber *)value;
 
 -(void)subscribeOnNotification:(NSString*)name;
 

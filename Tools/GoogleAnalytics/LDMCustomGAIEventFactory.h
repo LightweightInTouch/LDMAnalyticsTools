@@ -11,5 +11,6 @@
 @interface LDMCustomGAIEventFactory : NSObject
 
 + (NSArray *)allEvents;
++ (void)setAllEvents:(NSArray*)events;
 
 @end

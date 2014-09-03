@@ -16,10 +16,10 @@
 @property (nonatomic) BOOL isTimed;
 
 #pragma mark - Initialization
-+ (CustomFlurryEvent*)event;
-+ (CustomFlurryEvent*)eventWithName:(NSString *)eventName
-                         parameters:(NSDictionary *)eventParameters
-                              timed:(BOOL)isTimed;
++ (instancetype)createEvent;
++ (instancetype)createEventWithName:(NSString *)eventName
+                   parameters:(NSDictionary *)eventParameters
+                        timed:(BOOL)isTimed;
 
 
 #pragma mark - Subscribe

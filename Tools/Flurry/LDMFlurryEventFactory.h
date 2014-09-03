@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FlurryEventFactory : NSObject
+@interface LDMFlurryEventFactory : NSObject
 
 + (NSArray *)allEvents;
++ (void)setAllEvents:(NSArray*)events;
 
 @end

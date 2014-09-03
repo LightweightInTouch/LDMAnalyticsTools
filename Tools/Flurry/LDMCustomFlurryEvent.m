@@ -13,14 +13,14 @@
 
 #pragma mark - Initialization
 
-+ (CustomFlurryEvent *)event{
-    return [[CustomFlurryEvent alloc] init];
++ (instancetype)createEvent{
+    return [[self alloc] init];
 }
 
-+ (CustomFlurryEvent *)eventWithName:(NSString *)eventName
-                          parameters:(NSDictionary *)eventParameters
-                               timed:(BOOL)isTimed{
-    CustomFlurryEvent *event = [CustomFlurryEvent event];
++ (instancetype)createEventWithName:(NSString *)eventName
+                         parameters:(NSDictionary *)eventParameters
+                              timed:(BOOL)isTimed{
+    LDMCustomFlurryEvent *event = [self createEvent];
     event.eventName = eventName;
     event.eventParameters = eventParameters;
     event.isTimed = isTimed;
