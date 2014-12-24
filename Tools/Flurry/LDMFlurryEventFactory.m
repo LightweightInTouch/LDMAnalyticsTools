@@ -7,7 +7,7 @@
 //
 
 #import "LDMFlurryEventFactory.h"
-#import "LDMCustomFlurryEvent.h"
+#import "LDMFlurryEvent.h"
 
 @implementation LDMFlurryEventFactory
 #pragma mark - Events

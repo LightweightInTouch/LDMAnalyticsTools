@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LDMCustomFlurryEvent : NSObject
+@interface LDMFlurryEvent : NSObject
 
 #pragma mark - Properties
 @property (nonatomic, strong) NSString *eventName;

@@ -6,10 +6,10 @@
 //
 //
 
-#import "LDMCustomFlurryEvent.h"
+#import "LDMFlurryEvent.h"
 #import "Flurry.h"
 
-@implementation LDMCustomFlurryEvent
+@implementation LDMFlurryEvent
 
 #pragma mark - Initialization
 
@@ -20,7 +20,7 @@
 + (instancetype)createEventWithName:(NSString *)eventName
                          parameters:(NSDictionary *)eventParameters
                               timed:(BOOL)isTimed{
-    LDMCustomFlurryEvent *event = [self createEvent];
+    LDMFlurryEvent *event = [self createEvent];
     event.eventName = eventName;
     event.eventParameters = eventParameters;
     event.isTimed = isTimed;

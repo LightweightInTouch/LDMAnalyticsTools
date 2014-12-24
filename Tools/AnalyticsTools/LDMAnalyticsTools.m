@@ -11,6 +11,7 @@
 NSString* const LDMAnalyticsTrackerIDKey = @"LDMAnalyticsTrackerIDKey";
 NSString* const LDMAnalyticsAppicationServiceIDKey = @"LDMAnalyticsAppicationServiceIDKey";
 NSString* const LDMAnalyticsEventsArrayKey = @"LDMAnalyticsEventsArrayKey";
+NSString* const LDMAnalyticsEventFactoryKey = @"LDMAnalyticsEventFactoryKey";
 NSString* const LDMAnalyticsTrackerIDValueGoogleAnalytics = @"LDMAnalyticsTrackerIDValueGoogleAnalytics";
 NSString* const LDMAnalyticsTrackerIDValueFlurryAnalytics = @"LDMAnalyticsTrackerIDValueFlurryAnalytics";
 NSString* const LDMAnalyitcsTrackerIDMixpanel = @"LDMAnalyitcsTrackerIDMixpanel";
@@ -82,7 +83,7 @@ NSString* const LDMAnalyitcsTrackerIDMixpanel = @"LDMAnalyitcsTrackerIDMixpanel"
 - (void)fillEventPool{
     NSMutableDictionary* newDictionary = [@{} mutableCopy];
     
-    for (NSDictionary* trackerDictionary in self.keys) {
+    for (NSDictionary* trackerDictionary in self.allUnnamedTrackersDictionaries) {
         // determine tracker, his events
         LDMBaseAnalyticsTracker* newTracker = [self trackerFromDictionary:trackerDictionary];
         if (newTracker) {
@@ -90,12 +91,17 @@ NSString* const LDMAnalyitcsTrackerIDMixpanel = @"LDMAnalyitcsTrackerIDMixpanel"
             NSString* stringID = [NSString stringWithFormat:@"tracker_%@_key_%@",trackerDictionary[LDMAnalyticsTrackerIDKey],trackerDictionary[LDMAnalyticsAppicationServiceIDKey]];
             
             newDictionary[stringID] = newTracker;
-            
-            [newTracker fillEventPool];
         }
     }
     
     self.allUnnamedTrackers = [newDictionary copy];
+    
+    for (NSString* key in self.allUnnamedTrackers) {
+        LDMBaseAnalyticsTracker* tracker = (LDMBaseAnalyticsTracker*)
+        self.allUnnamedTrackers[key];
+        [tracker fillEventPool];
+    }
+    
     [self.flurryAnalyticsTracker fillEventPool];
     [self.googleAnalyticsTracker fillEventPool];
 }

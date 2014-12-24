@@ -7,7 +7,7 @@
 //
 
 #import "LDMFlurryAnalyticsTracker.h"
-#import "LDMCustomFlurryEvent.h"
+#import "LDMFlurryEvent.h"
 #import "LDMFlurryEventFactory.h"
 #import "Flurry.h"
 

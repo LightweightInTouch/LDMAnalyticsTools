@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "LDMBaseEventFactory.h"
+#import "LDMFlurryEvent.h"
+
 @interface LDMFlurryEventFactory : LDMBaseEventFactory
 
 @end

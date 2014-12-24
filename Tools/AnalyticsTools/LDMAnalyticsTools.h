@@ -14,6 +14,7 @@
 extern NSString* const LDMAnalyticsTrackerIDKey;
 extern NSString* const LDMAnalyticsAppicationServiceIDKey;
 extern NSString* const LDMAnalyticsEventsArrayKey;
+extern NSString* const LDMAnalyticsEventFactoryKey;
 extern NSString* const LDMAnalyticsTrackerIDValueGoogleAnalytics;
 extern NSString* const LDMAnalyticsTrackerIDValueFlurryAnalytics;
 extern NSString* const LDMAnalyitcsTrackerIDMixpanel;
@@ -29,6 +30,7 @@ extern NSString* const LDMAnalyitcsTrackerIDMixpanel;
 // that's all!
 // [LDMAnalyticsTools fillEventPool];
 @property (nonatomic,strong) NSDictionary* keys;
+@property (nonatomic,strong) NSArray* allUnnamedTrackersDictionaries;
 @property (nonatomic,strong) NSDictionary* allUnnamedTrackers;
 @property (nonatomic,strong) LDMGAITracker *googleAnalyticsTracker;
 @property (nonatomic,strong) LDMFlurryAnalyticsTracker *flurryAnalyticsTracker;

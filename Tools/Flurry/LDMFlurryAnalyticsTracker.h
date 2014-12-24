@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LDMBaseAnalyticsTracker.h"
+#import "LDMFlurryEventFactory.h"
 
 @interface LDMFlurryAnalyticsTracker : LDMBaseAnalyticsTracker
 /*this class provides an object-oriented interface for Flurry SDK */
