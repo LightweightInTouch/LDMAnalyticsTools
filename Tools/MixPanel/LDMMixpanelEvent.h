@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Mixpanel.h"
+@class LDMMixpanelTracker;
 
 @interface LDMMixpanelEvent : NSObject
 
@@ -15,6 +15,8 @@
 @property (nonatomic, strong) NSString *eventName;
 @property (nonatomic, strong) NSDictionary *eventParameters;
 @property (nonatomic) BOOL isTimed;
+
+@property (nonatomic, weak)  LDMMixpanelTracker *tracker;
 
 #pragma mark - Initialization
 + (instancetype)createEvent;

@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LDMBaseAnalyticsTracker.h"
+#import "LDMMixpanelTracker.h"
 #import "LDMGAITracker.h"
 #import "LDMFlurryAnalyticsTracker.h"
-#import "LDMBaseAnalyticsTracker.h"
 
 extern NSString* const LDMAnalyticsTrackerIDKey;
 extern NSString* const LDMAnalyticsAppicationServiceIDKey;
@@ -17,7 +18,7 @@ extern NSString* const LDMAnalyticsEventsArrayKey;
 extern NSString* const LDMAnalyticsEventFactoryKey;
 extern NSString* const LDMAnalyticsTrackerIDValueGoogleAnalytics;
 extern NSString* const LDMAnalyticsTrackerIDValueFlurryAnalytics;
-extern NSString* const LDMAnalyitcsTrackerIDMixpanel;
+extern NSString* const LDMAnalyticsTrackerIDValueMixpanel;
 
 @interface LDMAnalyticsTools : NSObject
 

@@ -9,7 +9,7 @@
 #import "LDMMixpanelEventFactory.h"
 #import "LDMMixpanelEvent.h"
 
-@implementation LDMMixPanelEventFactory
+@implementation LDMMixpanelEventFactory
 #pragma mark - Events
 
 + (LDMMixpanelEvent*)eventWithName:(NSString*)name

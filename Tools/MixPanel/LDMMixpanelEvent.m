@@ -7,6 +7,7 @@
 //
 
 #import "LDMMixpanelEvent.h"
+#import "LDMMixpanelTracker.h"
 
 @implementation LDMMixpanelEvent
 
@@ -41,7 +42,7 @@
 
 /*default handler*/
 - (void)defaultNotificationHandler:(NSNotification *)notification{
-    [[Mixpanel sharedInstance] track:self.eventName properties:self.eventParameters];
+    [self.tracker trackEvent:self];
 //    [Flurry logEvent:self.eventName withParameters:self.eventParameters timed:self.isTimed];
 //    if (logEnabled)
 //    {

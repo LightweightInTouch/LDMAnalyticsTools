@@ -14,7 +14,7 @@ NSString* const LDMAnalyticsEventsArrayKey = @"LDMAnalyticsEventsArrayKey";
 NSString* const LDMAnalyticsEventFactoryKey = @"LDMAnalyticsEventFactoryKey";
 NSString* const LDMAnalyticsTrackerIDValueGoogleAnalytics = @"LDMAnalyticsTrackerIDValueGoogleAnalytics";
 NSString* const LDMAnalyticsTrackerIDValueFlurryAnalytics = @"LDMAnalyticsTrackerIDValueFlurryAnalytics";
-NSString* const LDMAnalyitcsTrackerIDMixpanel = @"LDMAnalyitcsTrackerIDMixpanel";
+NSString* const LDMAnalyticsTrackerIDValueMixpanel = @"LDMAnalyticsTrackerIDValueMixpanel";
 
 
 @implementation LDMAnalyticsTools
@@ -40,6 +40,21 @@ NSString* const LDMAnalyitcsTrackerIDMixpanel = @"LDMAnalyitcsTrackerIDMixpanel"
         _flurryAnalyticsTracker = [LDMFlurryAnalyticsTracker createFlurryTrackerWithAppID:self.keys[@"flurryAnalyticsTracker"]];
     }
     return _flurryAnalyticsTracker;
+}
+
+- (LDMMixpanelTracker*)mixpanelTrackerFromDictionary:(NSDictionary*)trackerDictionary {
+    LDMMixpanelTracker* newTracker = nil;
+    if ([trackerDictionary[LDMAnalyticsTrackerIDKey] isEqualToString:LDMAnalyticsTrackerIDValueMixpanel]) {
+        // so, let's create google analytics here
+        newTracker = [LDMMixpanelTracker createTrackerWithAppID:trackerDictionary[LDMAnalyticsAppicationServiceIDKey]];
+        
+        NSArray* events = trackerDictionary[LDMAnalyticsEventsArrayKey];
+        if ([events isKindOfClass:[NSArray class]]) {
+            newTracker.eventPool = events;
+        }
+    }
+    
+    return newTracker;
 }
 
 - (LDMGAITracker*)googleTrackerFromDictionary:(NSDictionary*)trackerDictionary {
@@ -76,7 +91,7 @@ NSString* const LDMAnalyitcsTrackerIDMixpanel = @"LDMAnalyitcsTrackerIDMixpanel"
     LDMBaseAnalyticsTracker* newTracker = nil;
     newTracker = [self googleTrackerFromDictionary:trackerDictionary];
     newTracker = newTracker ? newTracker : [self flurryTrackerFromDicitonary:trackerDictionary];
-    
+    newTracker = newTracker ? newTracker : [self mixpanelTrackerFromDictionary:trackerDictionary];
     return newTracker;
 }
 

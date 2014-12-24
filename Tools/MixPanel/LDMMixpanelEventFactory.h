@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "LDMBaseEventFactory.h"
 #import "LDMMixpanelEvent.h"
-@interface LDMMixPanelEventFactory : LDMBaseEventFactory
+
+@interface LDMMixpanelEventFactory : LDMBaseEventFactory
 
 @end
