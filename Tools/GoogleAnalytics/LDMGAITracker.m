@@ -10,7 +10,7 @@
 #import "GAIDictionaryBuilder.h"
 #import "GAIFields.h"
 #import "GAI.h"
-#import "LDMCustomGAIEventFactory.h"
+#import "LDMGAIEventFactory.h"
 
 static const CGFloat kGoogleAnalyticsDispathInterval = 30.0f; /*it is not optimal for battery usage, test*/
 
@@ -31,6 +31,10 @@ static const CGFloat kGoogleAnalyticsDispathInterval = 30.0f; /*it is not optima
     }
     return self;
 }
++ (instancetype)createTrackerWithAppID:(NSString *)appID {
+    return [self createGAITrackerWithTrackerID:appID];
+}
+
 + (instancetype)createGAITracker{
     return [[self alloc] init];
 }
@@ -44,6 +48,7 @@ static const CGFloat kGoogleAnalyticsDispathInterval = 30.0f; /*it is not optima
     return tracker;
 }
 - (void)configureDefaultSettings{
+    self.eventFactory = [LDMGAIEventFactory createFactory];
     // Optional: automatically send uncaught exceptions to Google Analytics.
     [GAI sharedInstance].trackUncaughtExceptions = YES;
     // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
@@ -54,14 +59,14 @@ static const CGFloat kGoogleAnalyticsDispathInterval = 30.0f; /*it is not optima
 
 
 #pragma mark - Events Handling
-- (void)sendEvent:(LDMCustomGAIEvent *)event{
+- (void)sendEvent:(LDMGAIEvent *)event{
     [self.tracker send:[[GAIDictionaryBuilder createEventWithCategory:event.eventCategory
                                                                action:event.eventAction
                                                                 label:event.eventLabel
                                                                 value:event.eventValueIs64bit] build]];
 }
 #pragma mark - Timing Handling
-- (void)sendTiming:(LDMCustomGAITiming *)timing{
+- (void)sendTiming:(LDMGAITiming *)timing{
 
     [self.tracker send:[[GAIDictionaryBuilder createTimingWithCategory:timing.timingCategory
                                                               interval:timing.timeInterval
@@ -77,8 +82,7 @@ static const CGFloat kGoogleAnalyticsDispathInterval = 30.0f; /*it is not optima
 #pragma mark - Pool of events
 
 - (void)fillEventPool{
-    self.pullOfEvents = self.pullOfEvents ? self.pullOfEvents : [LDMCustomGAIEventFactory allEvents];
-    for (LDMCustomGAIEvent *event in self.pullOfEvents) {
+    for (LDMGAIEvent *event in self.eventPool) {
         event.tracker = self;
     }
 }

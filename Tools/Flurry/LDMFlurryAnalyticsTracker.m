@@ -30,7 +30,11 @@
 }
 
 #pragma mark - Initialization
-+ (instancetype)createLDMFlurryTrackerWithAppID:(NSString *)appID{
++ (instancetype)createTrackerWithAppID:(NSString *)appID {
+    return [self createFlurryTrackerWithAppID:appID];
+}
+
++ (instancetype)createFlurryTrackerWithAppID:(NSString *)appID{
 
     LDMFlurryAnalyticsTracker *tracker = [[self alloc] init];
     [tracker defaultSessionSettings];
@@ -40,7 +44,7 @@
     
     return  tracker;
 }
-+ (instancetype)createLDMFlurryTrackerWithSettingsEnabled:(BOOL)secureTransport
++ (instancetype)createFlurryTrackerWithSettingsEnabled:(BOOL)secureTransport
                                               andReportsOnPauseSending:(BOOL)reportOnPause
                                               andReportsOnCloseSending:(BOOL)reportsOnClose
                                                              withAppID:(NSString *)appID{
@@ -54,6 +58,8 @@
 
 #pragma mark - set settings
 - (void)defaultSessionSettings{
+    self.eventFactory = [LDMFlurryEventFactory createFactory];
+    
     self.secureTransportEnabled = YES;
     self.reportsOnCloseEnabled  = YES;
     self.reportsOnPauseEnabled  = YES;
@@ -106,16 +112,12 @@
 //}
 
 #pragma mark - Custom Events Actions
-- (void)placeEvent:(LDMCustomFlurryEvent *)event{
-    if (event.eventName) {
-        [Flurry logEvent:event.eventName
-          withParameters:event.eventParameters
-                   timed:event.isTimed];
-    }
-}   
-
-- (void)fillEventPool{
-    self.pullOfEvents = self.pullOfEvents ? [LDMFlurryEventFactory allEvents] : self.pullOfEvents;
-}
+//- (void)placeEvent:(LDMCustomFlurryEvent *)event{
+//    if (event.eventName) {
+//        [Flurry logEvent:event.eventName
+//          withParameters:event.eventParameters
+//                   timed:event.isTimed];
+//    }
+//}
 
 @end

@@ -6,11 +6,10 @@
 //
 //
 
-#import "LDMCustomGAIEventFactory.h"
-#import "LDMCustomGAIEvent.h"
+#import "LDMGAIEventFactory.h"
+#import "LDMGAIEvent.h"
 
-@implementation LDMCustomGAIEventFactory
-static NSArray* _allEvents = nil;
+@implementation LDMGAIEventFactory
 
 #pragma mark - Events
 
@@ -34,17 +33,5 @@ examples:
     return socialLoginEvent;
 }
 */
-
-+ (NSArray *)allEvents{
-    return _allEvents ? _allEvents :
-    //
-    @[/*[self SessionOpenedEvent],
-       [self SocialLoginEvent]*/
-      ];
-}
-
-+ (void)setAllEvents:(NSArray*)events{
-    _allEvents = events;
-}
 
 @end

@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "GAITracker.h"
-#import "LDMCustomGAIEvent.h"
-#import "LDMCustomGAITiming.h"
+#import "LDMGAIEvent.h"
+#import "LDMGAITiming.h"
+#import "LDMBaseAnalyticsTracker.h"
 
-@interface LDMGAITracker : NSObject
+@interface LDMGAITracker : LDMBaseAnalyticsTracker
 /*this class is an adapter around GAI Library*/
 @property (nonatomic,strong) id<GAITracker>tracker;
 
@@ -19,18 +20,10 @@
 + (instancetype)createGAITracker;
 + (instancetype)createGAITrackerWithTrackerID:(NSString *)trackerID;
 #pragma mark - Events Handling
-- (void)sendEvent:(LDMCustomGAIEvent *)event;
+- (void)sendEvent:(LDMGAIEvent *)event;
 #pragma mark - Timing Handling
-- (void)sendTiming:(LDMCustomGAITiming *)timing;
+- (void)sendTiming:(LDMGAITiming *)timing;
 #pragma mark - View Handling
 - (void)sendViewWithName:(NSString *)viewName;
-
-//#pragma mark - Analytics Deployments
-
-#pragma mark - Pull of events
-@property (nonatomic, strong) NSArray *pullOfEvents;
-
-- (void)fillEventPool;
-
 
 @end

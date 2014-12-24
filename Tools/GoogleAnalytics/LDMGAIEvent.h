@@ -10,7 +10,7 @@
 
 @class LDMGAITracker;
 
-@interface LDMCustomGAIEvent : NSObject
+@interface LDMGAIEvent : NSObject
 
 @property (nonatomic,strong) NSString *eventCategory;
 @property (nonatomic,strong) NSString *eventAction;

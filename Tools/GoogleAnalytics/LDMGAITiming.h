@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LDMCustomGAITiming : NSObject
+@interface LDMGAITiming : NSObject
 
 @property (nonatomic,strong) NSString* timingCategory;
 @property (nonatomic,strong) NSString* timingName;

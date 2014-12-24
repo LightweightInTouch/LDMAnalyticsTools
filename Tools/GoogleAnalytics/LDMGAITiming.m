@@ -6,9 +6,9 @@
 //
 //
 
-#import "LDMCustomGAITiming.h"
+#import "LDMGAITiming.h"
 
-@implementation LDMCustomGAITiming
+@implementation LDMGAITiming
 
 #pragma mark - Initialization
 
@@ -20,7 +20,7 @@
                                        withLabel:(NSString *)label
                                 withTimeInterval:(NSNumber *)value{
 
-    LDMCustomGAITiming* timing = [self createTiming];
+    LDMGAITiming* timing = [self createTiming];
     timing.timingCategory = category;
     timing.timingName     = name;
     timing.timingLabel    = label;

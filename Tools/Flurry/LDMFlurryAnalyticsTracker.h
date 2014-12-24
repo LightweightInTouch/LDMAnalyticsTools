@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LDMBaseAnalyticsTracker.h"
 
-@interface LDMFlurryAnalyticsTracker : NSObject
+@interface LDMFlurryAnalyticsTracker : LDMBaseAnalyticsTracker
 /*this class provides an object-oriented interface for Flurry SDK */
 typedef enum{
     flurryGenderSigilMale,
@@ -27,18 +28,13 @@ typedef enum{
 @property (nonatomic, assign) flurryGenderSigils trackingGender;
 
 #pragma mark - Initialization
-+ (instancetype)createLDMFlurryTrackerWithAppID:(NSString*)appID;
-
-+ (instancetype)createLDMFlurryTrackerWithSettingsEnabled:(BOOL)secureTransport
++ (instancetype)createFlurryTrackerWithAppID:(NSString*)appID;
++ (instancetype)createFlurryTrackerWithSettingsEnabled:(BOOL)secureTransport
                                               andReportsOnPauseSending:(BOOL)reportOnPuase
                                               andReportsOnCloseSending:(BOOL)reportsOnClose
                                                              withAppID:(NSString *)appID;
 //#pragma mark - Location settings
 //-(void)activeLocationOption:(BOOL)locationIsEnabled;
 //-(void)updateLastLocation;
-
-#pragma mark - Pool of events
-@property (nonatomic,strong) NSArray *pullOfEvents;
-- (void)fillEventPool;
 
 @end

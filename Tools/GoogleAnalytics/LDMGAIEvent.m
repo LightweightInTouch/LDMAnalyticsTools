@@ -6,15 +6,15 @@
 //
 //
 
-#import "LDMCustomGAIEvent.h"
+#import "LDMGAIEvent.h"
 #import "LDMGAITracker.h"
-@interface LDMCustomGAIEvent ()
+@interface LDMGAIEvent ()
 
 @property (nonatomic,strong) NSString *eventActionPrefix;
 
 @end
 
-@implementation LDMCustomGAIEvent
+@implementation LDMGAIEvent
 
 #pragma mark - Initialization
 
@@ -26,7 +26,7 @@
                                action:(NSString *)eventAction
                                 label:(NSString *)eventLabel
                                 value:(NSNumber *)eventValue{
-    LDMCustomGAIEvent *event = [self createEvent];
+    LDMGAIEvent *event = [self createEvent];
     event.eventCategory = eventCategory;
     event.eventAction   = eventAction;
     event.eventLabel    = eventLabel;

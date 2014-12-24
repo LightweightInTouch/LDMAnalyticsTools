@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LDMBaseEventFactory.h"
 
-@interface LDMCustomGAIEventFactory : NSObject
-
-+ (NSArray *)allEvents;
-+ (void)setAllEvents:(NSArray*)events;
+@interface LDMGAIEventFactory : LDMBaseEventFactory
 
 @end

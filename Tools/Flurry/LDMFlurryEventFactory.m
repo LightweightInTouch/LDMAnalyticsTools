@@ -10,7 +10,6 @@
 #import "LDMCustomFlurryEvent.h"
 
 @implementation LDMFlurryEventFactory
-static NSArray* _allEvents = nil;
 #pragma mark - Events
 
 /*
@@ -33,15 +32,5 @@ Examples:
     return socialLoginEvent;
 }
 */
-+ (NSArray *)allEvents{
-    return _allEvents ? _allEvents :
-    //
-    @[/*[self SessionOpenedEvent],
-                 [self SocialLoginEvent]*/
-                 ];
-}
 
-+ (void)setAllEvents:(NSArray*)events{
-    _allEvents = events;
-}
 @end

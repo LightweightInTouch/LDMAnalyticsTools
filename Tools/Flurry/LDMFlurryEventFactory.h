@@ -7,10 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface LDMFlurryEventFactory : NSObject
-
-+ (NSArray *)allEvents;
-+ (void)setAllEvents:(NSArray*)events;
+#import "LDMBaseEventFactory.h"
+@interface LDMFlurryEventFactory : LDMBaseEventFactory
 
 @end
