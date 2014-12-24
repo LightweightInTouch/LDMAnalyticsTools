@@ -12,6 +12,7 @@
 @implementation EXAMPLEAppDelegate
 static NSString* LDMGoogleAnalyticsID = @"";
 static NSString* LDMFlurryAnalyticsID = @"";
+static NSString* LDMMixpanelID = @"";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
@@ -22,11 +23,11 @@ static NSString* LDMFlurryAnalyticsID = @"";
     [LDMAnalyticsTools sharedInstance].allUnnamedTrackersDictionaries =
     @[
       @{
-      LDMAnalyticsTrackerIDKey : LDMAnalyticsTrackerIDValueFlurryAnalytics,
-      LDMAnalyticsAppicationServiceIDKey : @"LDMFlurryAnalyticsID",
+      LDMAnalyticsTrackerIDKey : LDMAnalyticsTrackerIDValueMixpanel,
+      LDMAnalyticsAppicationServiceIDKey : @"LDMMixpanelID",
       LDMAnalyticsEventsArrayKey :
           @[
-              [LDMFlurryEvent createEvent]
+              [LDMMixpanelEvent createEvent]
            ]
       }
     ];
