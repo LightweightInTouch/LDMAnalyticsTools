@@ -19,6 +19,18 @@ static NSString* LDMFlurryAnalyticsID = @"";
      @{ @"googleAnalyticsTracker" : @"LDMGoogleAnalytcsID",
         @"flurryAnalyticsTracker" : @"LDMFlurryAnalyticsID"
      };
+    [LDMAnalyticsTools sharedInstance].allUnnamedTrackersDictionaries =
+    @[
+      @{
+      LDMAnalyticsTrackerIDKey : LDMAnalyticsTrackerIDValueFlurryAnalytics,
+      LDMAnalyticsAppicationServiceIDKey : @"LDMFlurryAnalyticsID",
+      LDMAnalyticsEventsArrayKey :
+          @[
+              [LDMFlurryEvent createEvent]
+           ]
+      }
+    ];
+    
      [LDMAnalyticsTools fillEventPool];
     // Override point for customization after application launch.
     return YES;

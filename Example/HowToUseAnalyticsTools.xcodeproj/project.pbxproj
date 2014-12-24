@@ -25,16 +25,18 @@
 		041BED1119B75DDF00E57AA7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BED1019B75DDF00E57AA7 /* SystemConfiguration.framework */; };
 		041BED1319B75DE500E57AA7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BED1219B75DE500E57AA7 /* libz.dylib */; };
 		041BED1519B75DF700E57AA7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BED1419B75DF700E57AA7 /* CoreData.framework */; };
-		041BED8A19B761AD00E57AA7 /* libFlurry_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BED6D19B761AD00E57AA7 /* libFlurry_4.4.0.a */; };
-		041BED8B19B761AD00E57AA7 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 041BED7519B761AD00E57AA7 /* libGoogleAnalyticsServices.a */; };
 		041BED8C19B761AD00E57AA7 /* LDMAnalyticsTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED7919B761AD00E57AA7 /* LDMAnalyticsTools.m */; };
-		041BED8D19B761AD00E57AA7 /* LDMCustomFlurryEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED7C19B761AD00E57AA7 /* LDMCustomFlurryEvent.m */; };
+		041BED8D19B761AD00E57AA7 /* LDMFlurryEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED7C19B761AD00E57AA7 /* LDMFlurryEvent.m */; };
 		041BED8E19B761AD00E57AA7 /* LDMFlurryAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED7E19B761AD00E57AA7 /* LDMFlurryAnalyticsTracker.m */; };
 		041BED8F19B761AD00E57AA7 /* LDMFlurryEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED8019B761AD00E57AA7 /* LDMFlurryEventFactory.m */; };
-		041BED9019B761AD00E57AA7 /* LDMCustomGAIEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED8319B761AD00E57AA7 /* LDMCustomGAIEvent.m */; };
-		041BED9119B761AD00E57AA7 /* LDMCustomGAIEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED8519B761AD00E57AA7 /* LDMCustomGAIEventFactory.m */; };
-		041BED9219B761AD00E57AA7 /* LDMCustomGAITiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED8719B761AD00E57AA7 /* LDMCustomGAITiming.m */; };
+		041BED9019B761AD00E57AA7 /* LDMGAIEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED8319B761AD00E57AA7 /* LDMGAIEvent.m */; };
+		041BED9119B761AD00E57AA7 /* LDMGAIEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED8519B761AD00E57AA7 /* LDMGAIEventFactory.m */; };
+		041BED9219B761AD00E57AA7 /* LDMGAITiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED8719B761AD00E57AA7 /* LDMGAITiming.m */; };
 		041BED9319B761AD00E57AA7 /* LDMGAITracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED8919B761AD00E57AA7 /* LDMGAITracker.m */; };
+		0456B9C01A4AC15100135BC9 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456B9BF1A4AC15100135BC9 /* libGoogleAnalyticsServices.a */; };
+		0456B9C21A4AC15D00135BC9 /* libFlurry_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456B9C11A4AC15D00135BC9 /* libFlurry_4.4.0.a */; };
+		0456B9C51A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B9C41A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.m */; };
+		0456B9C81A4ACEF100135BC9 /* LDMBaseEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B9C71A4ACEF100135BC9 /* LDMBaseEventFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,30 +74,34 @@
 		041BED1219B75DE500E57AA7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		041BED1419B75DF700E57AA7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		041BED6C19B761AD00E57AA7 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		041BED6D19B761AD00E57AA7 /* libFlurry_4.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.4.0.a; sourceTree = "<group>"; };
 		041BED6F19B761AD00E57AA7 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
 		041BED7019B761AD00E57AA7 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
 		041BED7119B761AD00E57AA7 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
 		041BED7219B761AD00E57AA7 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
 		041BED7319B761AD00E57AA7 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
 		041BED7419B761AD00E57AA7 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		041BED7519B761AD00E57AA7 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		041BED7819B761AD00E57AA7 /* LDMAnalyticsTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMAnalyticsTools.h; sourceTree = "<group>"; };
 		041BED7919B761AD00E57AA7 /* LDMAnalyticsTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMAnalyticsTools.m; sourceTree = "<group>"; };
-		041BED7B19B761AD00E57AA7 /* LDMCustomFlurryEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMCustomFlurryEvent.h; sourceTree = "<group>"; };
-		041BED7C19B761AD00E57AA7 /* LDMCustomFlurryEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMCustomFlurryEvent.m; sourceTree = "<group>"; };
+		041BED7B19B761AD00E57AA7 /* LDMFlurryEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMFlurryEvent.h; sourceTree = "<group>"; };
+		041BED7C19B761AD00E57AA7 /* LDMFlurryEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMFlurryEvent.m; sourceTree = "<group>"; };
 		041BED7D19B761AD00E57AA7 /* LDMFlurryAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMFlurryAnalyticsTracker.h; sourceTree = "<group>"; };
 		041BED7E19B761AD00E57AA7 /* LDMFlurryAnalyticsTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMFlurryAnalyticsTracker.m; sourceTree = "<group>"; };
 		041BED7F19B761AD00E57AA7 /* LDMFlurryEventFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMFlurryEventFactory.h; sourceTree = "<group>"; };
 		041BED8019B761AD00E57AA7 /* LDMFlurryEventFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMFlurryEventFactory.m; sourceTree = "<group>"; };
-		041BED8219B761AD00E57AA7 /* LDMCustomGAIEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMCustomGAIEvent.h; sourceTree = "<group>"; };
-		041BED8319B761AD00E57AA7 /* LDMCustomGAIEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMCustomGAIEvent.m; sourceTree = "<group>"; };
-		041BED8419B761AD00E57AA7 /* LDMCustomGAIEventFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMCustomGAIEventFactory.h; sourceTree = "<group>"; };
-		041BED8519B761AD00E57AA7 /* LDMCustomGAIEventFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMCustomGAIEventFactory.m; sourceTree = "<group>"; };
-		041BED8619B761AD00E57AA7 /* LDMCustomGAITiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMCustomGAITiming.h; sourceTree = "<group>"; };
-		041BED8719B761AD00E57AA7 /* LDMCustomGAITiming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMCustomGAITiming.m; sourceTree = "<group>"; };
+		041BED8219B761AD00E57AA7 /* LDMGAIEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMGAIEvent.h; sourceTree = "<group>"; };
+		041BED8319B761AD00E57AA7 /* LDMGAIEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMGAIEvent.m; sourceTree = "<group>"; };
+		041BED8419B761AD00E57AA7 /* LDMGAIEventFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMGAIEventFactory.h; sourceTree = "<group>"; };
+		041BED8519B761AD00E57AA7 /* LDMGAIEventFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMGAIEventFactory.m; sourceTree = "<group>"; };
+		041BED8619B761AD00E57AA7 /* LDMGAITiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMGAITiming.h; sourceTree = "<group>"; };
+		041BED8719B761AD00E57AA7 /* LDMGAITiming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMGAITiming.m; sourceTree = "<group>"; };
 		041BED8819B761AD00E57AA7 /* LDMGAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMGAITracker.h; sourceTree = "<group>"; };
 		041BED8919B761AD00E57AA7 /* LDMGAITracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMGAITracker.m; sourceTree = "<group>"; };
+		0456B9BF1A4AC15100135BC9 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		0456B9C11A4AC15D00135BC9 /* libFlurry_4.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.4.0.a; sourceTree = "<group>"; };
+		0456B9C31A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMBaseAnalyticsTracker.h; sourceTree = "<group>"; };
+		0456B9C41A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMBaseAnalyticsTracker.m; sourceTree = "<group>"; };
+		0456B9C61A4ACEF100135BC9 /* LDMBaseEventFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMBaseEventFactory.h; sourceTree = "<group>"; };
+		0456B9C71A4ACEF100135BC9 /* LDMBaseEventFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMBaseEventFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +112,10 @@
 				041BED1519B75DF700E57AA7 /* CoreData.framework in Frameworks */,
 				041BED1319B75DE500E57AA7 /* libz.dylib in Frameworks */,
 				041BED1119B75DDF00E57AA7 /* SystemConfiguration.framework in Frameworks */,
-				041BED8B19B761AD00E57AA7 /* libGoogleAnalyticsServices.a in Frameworks */,
+				0456B9C01A4AC15100135BC9 /* libGoogleAnalyticsServices.a in Frameworks */,
 				041BECB119B7557E00E57AA7 /* CoreGraphics.framework in Frameworks */,
-				041BED8A19B761AD00E57AA7 /* libFlurry_4.4.0.a in Frameworks */,
 				041BECB319B7557E00E57AA7 /* UIKit.framework in Frameworks */,
+				0456B9C21A4AC15D00135BC9 /* libFlurry_4.4.0.a in Frameworks */,
 				041BECAF19B7557E00E57AA7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +225,8 @@
 		041BED6B19B761AD00E57AA7 /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
+				0456B9C11A4AC15D00135BC9 /* libFlurry_4.4.0.a */,
 				041BED6C19B761AD00E57AA7 /* Flurry.h */,
-				041BED6D19B761AD00E57AA7 /* libFlurry_4.4.0.a */,
 			);
 			path = Flurry;
 			sourceTree = "<group>";
@@ -228,13 +234,13 @@
 		041BED6E19B761AD00E57AA7 /* GoogleAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				0456B9BF1A4AC15100135BC9 /* libGoogleAnalyticsServices.a */,
 				041BED6F19B761AD00E57AA7 /* GAI.h */,
 				041BED7019B761AD00E57AA7 /* GAIDictionaryBuilder.h */,
 				041BED7119B761AD00E57AA7 /* GAIFields.h */,
 				041BED7219B761AD00E57AA7 /* GAILogger.h */,
 				041BED7319B761AD00E57AA7 /* GAITrackedViewController.h */,
 				041BED7419B761AD00E57AA7 /* GAITracker.h */,
-				041BED7519B761AD00E57AA7 /* libGoogleAnalyticsServices.a */,
 			);
 			path = GoogleAnalytics;
 			sourceTree = "<group>";
@@ -255,6 +261,10 @@
 			children = (
 				041BED7819B761AD00E57AA7 /* LDMAnalyticsTools.h */,
 				041BED7919B761AD00E57AA7 /* LDMAnalyticsTools.m */,
+				0456B9C31A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.h */,
+				0456B9C41A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.m */,
+				0456B9C61A4ACEF100135BC9 /* LDMBaseEventFactory.h */,
+				0456B9C71A4ACEF100135BC9 /* LDMBaseEventFactory.m */,
 			);
 			path = AnalyticsTools;
 			sourceTree = "<group>";
@@ -262,8 +272,8 @@
 		041BED7A19B761AD00E57AA7 /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				041BED7B19B761AD00E57AA7 /* LDMCustomFlurryEvent.h */,
-				041BED7C19B761AD00E57AA7 /* LDMCustomFlurryEvent.m */,
+				041BED7B19B761AD00E57AA7 /* LDMFlurryEvent.h */,
+				041BED7C19B761AD00E57AA7 /* LDMFlurryEvent.m */,
 				041BED7D19B761AD00E57AA7 /* LDMFlurryAnalyticsTracker.h */,
 				041BED7E19B761AD00E57AA7 /* LDMFlurryAnalyticsTracker.m */,
 				041BED7F19B761AD00E57AA7 /* LDMFlurryEventFactory.h */,
@@ -275,12 +285,12 @@
 		041BED8119B761AD00E57AA7 /* GoogleAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				041BED8219B761AD00E57AA7 /* LDMCustomGAIEvent.h */,
-				041BED8319B761AD00E57AA7 /* LDMCustomGAIEvent.m */,
-				041BED8419B761AD00E57AA7 /* LDMCustomGAIEventFactory.h */,
-				041BED8519B761AD00E57AA7 /* LDMCustomGAIEventFactory.m */,
-				041BED8619B761AD00E57AA7 /* LDMCustomGAITiming.h */,
-				041BED8719B761AD00E57AA7 /* LDMCustomGAITiming.m */,
+				041BED8219B761AD00E57AA7 /* LDMGAIEvent.h */,
+				041BED8319B761AD00E57AA7 /* LDMGAIEvent.m */,
+				041BED8419B761AD00E57AA7 /* LDMGAIEventFactory.h */,
+				041BED8519B761AD00E57AA7 /* LDMGAIEventFactory.m */,
+				041BED8619B761AD00E57AA7 /* LDMGAITiming.h */,
+				041BED8719B761AD00E57AA7 /* LDMGAITiming.m */,
 				041BED8819B761AD00E57AA7 /* LDMGAITracker.h */,
 				041BED8919B761AD00E57AA7 /* LDMGAITracker.m */,
 			);
@@ -386,17 +396,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041BED8D19B761AD00E57AA7 /* LDMCustomFlurryEvent.m in Sources */,
+				041BED8D19B761AD00E57AA7 /* LDMFlurryEvent.m in Sources */,
 				041BED9319B761AD00E57AA7 /* LDMGAITracker.m in Sources */,
-				041BED9019B761AD00E57AA7 /* LDMCustomGAIEvent.m in Sources */,
+				041BED9019B761AD00E57AA7 /* LDMGAIEvent.m in Sources */,
 				041BED8C19B761AD00E57AA7 /* LDMAnalyticsTools.m in Sources */,
+				0456B9C51A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.m in Sources */,
 				041BECBB19B7557E00E57AA7 /* main.m in Sources */,
-				041BED9119B761AD00E57AA7 /* LDMCustomGAIEventFactory.m in Sources */,
+				041BED9119B761AD00E57AA7 /* LDMGAIEventFactory.m in Sources */,
 				041BED8E19B761AD00E57AA7 /* LDMFlurryAnalyticsTracker.m in Sources */,
-				041BED9219B761AD00E57AA7 /* LDMCustomGAITiming.m in Sources */,
+				041BED9219B761AD00E57AA7 /* LDMGAITiming.m in Sources */,
 				041BECC819B7557E00E57AA7 /* EXAMPLEViewController.m in Sources */,
 				041BECBF19B7557E00E57AA7 /* EXAMPLEAppDelegate.m in Sources */,
 				041BED8F19B761AD00E57AA7 /* LDMFlurryEventFactory.m in Sources */,
+				0456B9C81A4ACEF100135BC9 /* LDMBaseEventFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,10 +548,8 @@
 				INFOPLIST_FILE = "HowToUseAnalyticsTools/HowToUseAnalyticsTools-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/HowToUseAnalyticsTools/ExternalLibraries/Flurry",
-					"$(PROJECT_DIR)/HowToUseAnalyticsTools/ExternalLibraries/GoogleAnalytics",
-					/Users/mac/Documents/Projects/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/ExternalLibraries/Flurry,
-					/Users/mac/Documents/Projects/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/ExternalLibraries/GoogleAnalytics,
+					"$(PROJECT_DIR)/../ExternalLibraries/GoogleAnalytics",
+					"$(PROJECT_DIR)/../ExternalLibraries/Flurry",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -556,10 +566,8 @@
 				INFOPLIST_FILE = "HowToUseAnalyticsTools/HowToUseAnalyticsTools-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/HowToUseAnalyticsTools/ExternalLibraries/Flurry",
-					"$(PROJECT_DIR)/HowToUseAnalyticsTools/ExternalLibraries/GoogleAnalytics",
-					/Users/mac/Documents/Projects/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/ExternalLibraries/Flurry,
-					/Users/mac/Documents/Projects/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/ExternalLibraries/GoogleAnalytics,
+					"$(PROJECT_DIR)/../ExternalLibraries/GoogleAnalytics",
+					"$(PROJECT_DIR)/../ExternalLibraries/Flurry",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
