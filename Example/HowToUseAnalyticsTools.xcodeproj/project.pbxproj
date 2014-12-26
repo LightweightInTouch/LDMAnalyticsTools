@@ -34,7 +34,6 @@
 		041BED9219B761AD00E57AA7 /* LDMGAITiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED8719B761AD00E57AA7 /* LDMGAITiming.m */; };
 		041BED9319B761AD00E57AA7 /* LDMGAITracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 041BED8919B761AD00E57AA7 /* LDMGAITracker.m */; };
 		0456B9C01A4AC15100135BC9 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456B9BF1A4AC15100135BC9 /* libGoogleAnalyticsServices.a */; };
-		0456B9C21A4AC15D00135BC9 /* libFlurry_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456B9C11A4AC15D00135BC9 /* libFlurry_4.4.0.a */; };
 		0456B9C51A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B9C41A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.m */; };
 		0456B9C81A4ACEF100135BC9 /* LDMBaseEventFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B9C71A4ACEF100135BC9 /* LDMBaseEventFactory.m */; };
 		0456B9CE1A4AE0C500135BC9 /* LDMMixpanelEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B9CB1A4AE0C500135BC9 /* LDMMixpanelEvent.m */; };
@@ -112,6 +111,7 @@
 		0456BBFD1A4AEB5700135BC9 /* UIImage+MPImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456BBB61A4AEB5600135BC9 /* UIImage+MPImageEffects.m */; };
 		0456BBFF1A4AEBA600135BC9 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456BBFE1A4AEBA600135BC9 /* libicucore.dylib */; };
 		0456BC021A4AEC3600135BC9 /* LDMMixpanelTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456BC011A4AEC3600135BC9 /* LDMMixpanelTracker.m */; };
+		0466B2DC1A4D77A500DCE4E0 /* libFlurry_6.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0466B2DB1A4D77A500DCE4E0 /* libFlurry_6.0.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,7 +172,6 @@
 		041BED8819B761AD00E57AA7 /* LDMGAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMGAITracker.h; sourceTree = "<group>"; };
 		041BED8919B761AD00E57AA7 /* LDMGAITracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMGAITracker.m; sourceTree = "<group>"; };
 		0456B9BF1A4AC15100135BC9 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
-		0456B9C11A4AC15D00135BC9 /* libFlurry_4.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.4.0.a; sourceTree = "<group>"; };
 		0456B9C31A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMBaseAnalyticsTracker.h; sourceTree = "<group>"; };
 		0456B9C41A4ACD8900135BC9 /* LDMBaseAnalyticsTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMBaseAnalyticsTracker.m; sourceTree = "<group>"; };
 		0456B9C61A4ACEF100135BC9 /* LDMBaseEventFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMBaseEventFactory.h; sourceTree = "<group>"; };
@@ -309,6 +308,7 @@
 		0456BBFE1A4AEBA600135BC9 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		0456BC001A4AEC3600135BC9 /* LDMMixpanelTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDMMixpanelTracker.h; sourceTree = "<group>"; };
 		0456BC011A4AEC3600135BC9 /* LDMMixpanelTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDMMixpanelTracker.m; sourceTree = "<group>"; };
+		0466B2DB1A4D77A500DCE4E0 /* libFlurry_6.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.0.0.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,12 +318,12 @@
 			files = (
 				0456BBFF1A4AEBA600135BC9 /* libicucore.dylib in Frameworks */,
 				041BED1519B75DF700E57AA7 /* CoreData.framework in Frameworks */,
+				0466B2DC1A4D77A500DCE4E0 /* libFlurry_6.0.0.a in Frameworks */,
 				041BED1319B75DE500E57AA7 /* libz.dylib in Frameworks */,
 				041BED1119B75DDF00E57AA7 /* SystemConfiguration.framework in Frameworks */,
 				0456B9C01A4AC15100135BC9 /* libGoogleAnalyticsServices.a in Frameworks */,
 				041BECB119B7557E00E57AA7 /* CoreGraphics.framework in Frameworks */,
 				041BECB319B7557E00E57AA7 /* UIKit.framework in Frameworks */,
-				0456B9C21A4AC15D00135BC9 /* libFlurry_4.4.0.a in Frameworks */,
 				041BECAF19B7557E00E57AA7 /* Foundation.framework in Frameworks */,
 				0456BBB81A4AEB5600135BC9 /* libMPCategoryHelpers.a in Frameworks */,
 			);
@@ -436,7 +436,7 @@
 		041BED6B19B761AD00E57AA7 /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				0456B9C11A4AC15D00135BC9 /* libFlurry_4.4.0.a */,
+				0466B2DB1A4D77A500DCE4E0 /* libFlurry_6.0.0.a */,
 				041BED6C19B761AD00E57AA7 /* Flurry.h */,
 			);
 			path = Flurry;
@@ -981,8 +981,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../ExternalLibraries/GoogleAnalytics",
 					"$(PROJECT_DIR)/../ExternalLibraries/Flurry",
-					/Users/mac/Documents/Projects/GitHub/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/ExternalLibraries/MixPanel/Mixpanel,
-					/Users/mac/Documents/Projects/GitHub/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/Submodules/MixPanel/Mixpanel,
+					"$(PROJECT_DIR)/../Submodules/MixPanel/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1001,8 +1000,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/../ExternalLibraries/GoogleAnalytics",
 					"$(PROJECT_DIR)/../ExternalLibraries/Flurry",
-					/Users/mac/Documents/Projects/GitHub/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/ExternalLibraries/MixPanel/Mixpanel,
-					/Users/mac/Documents/Projects/GitHub/LolgearOwnerGits/ObjectiveC/LDMAnalyticsTools/Submodules/MixPanel/Mixpanel,
+					"$(PROJECT_DIR)/../Submodules/MixPanel/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
