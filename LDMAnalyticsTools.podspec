@@ -27,5 +27,6 @@ Pod::Spec.new do |s|
   s.libraries = "icucore","z"
 
   s.requires_arc = true
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "./Submodules" }
 
 end
