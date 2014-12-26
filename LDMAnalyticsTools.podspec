@@ -5,28 +5,33 @@ Pod::Spec.new do |s|
 
   s.description  = <<-DESC
                    These tools needed for analytics engines.
-                   If you don't know how to use analytics engines for iOS development, this is the best place to start. Easy to use and some templates are ready after installation.
+                   If you don't know how to use analytics engines for iOS development, this is the best place to start.
+                   Easy to use and some templates are ready after installation.
                    DESC
   s.homepage     = "https://github.com/lolgear/LDMAnalyticsTools"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.author             = { "Dmitry Lobanov" => "gaussblurinc@gmail.com" }
+  s.author       = { "Dmitry Lobanov" => "gaussblurinc@gmail.com" }
 
   s.platform     = :ios
 
   s.ios.deployment_target = "5.0"
 
-  s.source       = { :git => "https://github.com/lolgear/LDMAnalyticsTools.git" }
+  s.source       = {
+    :git => "https://github.com/lolgear/LDMAnalyticsTools.git",
+    :submodules => true
+  }
 
-  s.source_files  = "Submodules/**/*.*", "ExternalLibraries/**/*.*", "Tools/**/*.{h,m}"
+  s.source_files  = "Tools/**/*.{h,m}"
   s.exclude_files = "Example"
 
   s.frameworks = "Foundation", "SystemConfiguration", "CoreData"
 
-  s.libraries = "icucore","z"
+  s.libraries = "icucore", "z"
+  s.vendored_libraries = 'ExternalLibraries/**/*.a'
 
   s.requires_arc = true
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "./Submodules" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => ["./Submodules/**/*.h","./ExternalLibraries/**/*.h"] }
 
 end
