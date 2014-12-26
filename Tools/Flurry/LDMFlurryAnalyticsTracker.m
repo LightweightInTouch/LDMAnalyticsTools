@@ -65,10 +65,10 @@
     self.reportsOnPauseEnabled  = YES;
 }
 
-- (void)setSecureTransportEnabled:(BOOL)secureTransportEnabled{
-    _secureTransportEnabled = secureTransportEnabled;
-    [Flurry setSecureTransportEnabled:secureTransportEnabled];
-}
+//- (void)setSecureTransportEnabled:(BOOL)secureTransportEnabled{
+//    _secureTransportEnabled = secureTransportEnabled;
+//    [Flurry setSecureTransportEnabled:secureTransportEnabled];
+//}
 
 - (void)setReportsOnPauseEnabled:(BOOL)reportsOnPauseEnabled{
     _reportsOnPauseEnabled = reportsOnPauseEnabled;
