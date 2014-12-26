@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LDMAnalyticsTools"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "This is analytics tool for ios development. Google Analytics and Flurry out-of-the-box"
 
   s.description  = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "5.0"
 
-  s.source       = { :git => "https://github.com/lolgear/LDMAnalyticsTools.git", :commit => "35a4046a319daa1022871e0c3c7cbd997c67d860" }
+  s.source       = { :git => "https://github.com/lolgear/LDMAnalyticsTools.git" }
 
   s.source_files  = "Submodules/**/*.*", "ExternalLibraries/**/*.*", "Tools/**/*.{h,m}"
   s.exclude_files = "Example"
