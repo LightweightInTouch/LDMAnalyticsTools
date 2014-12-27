@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LDMAnalyticsTools"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "This is analytics tool for ios development. Google Analytics and Flurry out-of-the-box"
 
   s.description  = <<-DESC
@@ -16,22 +16,21 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
 
-  s.ios.deployment_target = "5.0"
+  s.ios.deployment_target = "6.0"
 
   s.source       = {
     :git => "https://github.com/lolgear/LDMAnalyticsTools.git",
-    :submodules => true
+    :submodules => true,
+    :tag => s.version.to_s
   }
 
-  s.source_files  = "Tools/**/*.{h,m}"
+  s.source_files  = "Tools/**/*.{h,m}", "ExternalLibraries/**/*.h", "Submodules/**/*.h"
   s.exclude_files = "Example"
-
   s.frameworks = "Foundation", "SystemConfiguration", "CoreData"
 
-  s.libraries = "icucore", "z"
+  s.libraries = "icucore", "z", "sqlite3.0"
   s.vendored_libraries = 'ExternalLibraries/**/*.a'
 
   s.requires_arc = true
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => ["./Submodules/**/*.h","./ExternalLibraries/**/*.h"] }
-
+  s.dependency 'Mixpanel'
 end
